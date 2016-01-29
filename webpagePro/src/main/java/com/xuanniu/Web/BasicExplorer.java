@@ -6,12 +6,10 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class BasicExplorer {
@@ -19,11 +17,7 @@ public class BasicExplorer {
 	/**
 	 * Mark init firefox
 	 */
-	public void initFirefox() {
-		System.out.println("	init the driver firefox type...");
-		System.setProperty("webdriver.firefox.bin", ConstantParam.firefoxBin);
-		ConstantParam.firefoxDriver = new FirefoxDriver();
-	}
+	
 
 	/**
 	 * Mark init chrome
